@@ -1,2 +1,1 @@
-# uor-malaysia
-University of Malaysia microsite
+# University of Malaysia microsite
