@@ -1,0 +1,169 @@
+body
+  background-color: #d8d8d8
+  background-image: url(../img/bg-pattern.png)
+  background-repeat: repeat
+  background-attachment: fixed
+
+.wrapper
+  background-color: $light-grey
+  margin: 0 auto
+  max-width: 1440px
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
+
+.hero
+  background-color: $dark-grey
+  background-image: url(../img/hero-img.jpg)
+  background-size: cover
+  padding: 0 0 250px
+  margin: 0 0 200px 0
+
+.top-bar
+  background-color: $red
+  padding: 15px
+  margin: 25px 0 0 0
+  transition: all 0.3s ease 0s
+
+.logo
+  width: 114px
+
+@media (max-width: 1000px)
+  .top-bar
+    margin: 0
+
+// PANEL 1
+
+.panel-1
+  position: relative
+  background-color: $white
+  max-width: 1024px
+  margin: 0 auto 100px auto
+  padding: 100px 0 0 0
+
+.icon-fixed
+  position: absolute
+  top: -70px
+  width: 140px
+  padding: 10px
+  background-color: $black
+
+
+// COURSE SECTION
+
+.courses
+  margin-bottom: 100px
+  //background-color: pink
+
+.course-info
+  background-color: $white
+  margin: 0 0 1.875rem 0
+  padding: 20px 20px 35px 20px
+
+.course-img-1
+  background-image: url(../img/course-thumb-1.jpg)
+  background-size: cover
+  height: 250px
+
+.course-img-2
+  background-image: url(../img/course-thumb-2.jpg)
+  background-size: cover
+  height: 250px
+
+.course-img-3
+  background-image: url(../img/course-thumb-3.jpg)
+  background-size: cover
+  height: 250px
+
+.course-img-4
+  background-image: url(../img/course-thumb-4.jpg)
+  background-size: cover
+  height: 250px
+
+
+// PANEL 2
+
+.panel-2
+  position: relative
+  background-color: $white
+  max-width: 1024px
+  margin: 0 auto 100px auto
+  padding: 30px 0 20px 0
+
+.icon
+  width: 140px
+  padding: 10px
+  background-color: $black
+  margin: 0 0 20px 0
+
+.language-support
+  background-color: $red
+  padding: 30px 20px 5px 20px
+
+
+// FINAL CTA
+
+.end-cta
+  background-color: $red
+  padding: 60px 0
+
+
+// FOOTER
+
+footer
+  background-color: $dark-grey
+  padding: 40px
+
+footer p
+  color: $white
+  font-size: 0.9em
+  font-weight: 300
+  margin: 0em
+
+footer a
+  color: $light-grey
+  font-weight: 500
+  margin: 0em
+
+.social-media
+  list-style: none
+  float: right
+  margin: 0
+  padding: 0
+
+.social-media li
+  display: inline-block
+  margin-left: 10px
+
+.facebook
+  background-image: url(../img/social-media.svg)
+  background-position: 0px 0px
+  @include social-media
+
+.twitter
+  background-image: url(../img/social-media.svg)
+  background-position: 150px 0px
+  @include social-media
+
+.linkedin
+  background-image: url(../img/social-media.svg)
+  background-position: 120px 0px
+  @include social-media
+
+.googleplus
+  background-image: url(../img/social-media.svg)
+  background-position: 90px 0px
+  @include social-media
+
+.youtube
+  background-image: url(../img/social-media.svg)
+  background-position: 60px 0px
+  @include social-media
+
+.instagram
+  background-image: url(../img/social-media.svg)
+  background-position: 30px 0px
+  @include social-media
+
+.instagram:hover, .youtube:hover, .googleplus:hover, .linkedin:hover, .twitter:hover, .facebook:hover
+  opacity: 0.5
