@@ -14,18 +14,36 @@ html.no-js(lang='en')
           .top-bar
             .logo
               img(src='img/device.svg')
-            //nav    
+            nav    
               ul
-                li
-                  a(href='/index.html') Home
-                li courses
-        
+                a(href='/index.html')
+                  li Home
+                li.course-btn courses
+          
+          
+          .sub-nav
+            .arrow
+            ul
+              a(href='/index.html')
+                li Business and Finance
+              a(href='/index.html')  
+                li Property and Construction
+              a(href='/index.html')
+                li Sciences
+              a(href='/index.html')
+                li Foundation Courses
+    
+          .menu
+            img(src='img/menu.svg')
+    
         .row
           .hero-text
-            h1.hero-title Are you Ready
-            h1.hero-subtitle to join the top 1%
-            .apply-cta
-              a(href='#') How to apply
+            div
+              h1.hero-title Are you Ready
+            .title-spacing
+              h1.hero-subtitle to join the top 1%
+          .apply-cta
+            a(href='#') How to apply
       
       section.panel-1
         .row
@@ -101,23 +119,34 @@ html.no-js(lang='en')
             h2.sign-off Are you ready?&nbsp;&nbsp;&nbsp;
             .apply-cta-footer
               a(href='#') How to apply
+      
       footer
         .row
-          .large-6.columns
+          .medium-6.columns
             p &copy; 2015 University of Reading
             p Visit the main site 
               a(href='http://www.reading.edu.my') reading.edu.my
-          .large-6.columns
+          .medium-6.columns
             ul.social-media
-              li.facebook
-                a(href='#')
-              li.twitter
-                a(href='#')                
-              li.linkedin
-                a(href='#') 
-              li.googleplus
-                a(href='#') 
-              li.youtube
-                a(href='#') 
-              li.instagram
-                a(href='#')               
+              a(href='https://www.facebook.com/universityofreadingmalaysia?ref=ts&fref=ts')
+                li.facebook
+              a(href='https://twitter.com/UoRMalaysia')
+                li.twitter
+              a(href='https://www.linkedin.com/edu/school?id=171025&trk=edu-cp-title') 
+                li.linkedin
+              a(href='https://plus.google.com/105915338740456278219/posts')
+                li.googleplus
+              a(href='https://www.youtube.com/channel/UCFOV46h5JqwaBD2gSzL8TJg')
+                li.youtube
+              a(href='https://www.instagram.com/uniofreadingmalaysia/')
+                li.instagram
+
+    script.
+      $('.course-btn').on('click', function(){
+      $('.sub-nav').toggleClass('show-sub-nav');
+      });  
+
+    script.
+      $('.menu').on('click', function(){
+      $('nav').toggleClass('show-nav');
+      });

@@ -39,8 +39,8 @@ h3
   background-color: $red
   padding: 5px 0
   display: inline
-  -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red
-  -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red
+  -webkit-box-shadow: 20px 0px 0px 0px $red, -20px 0px 0px 0px $red
+  -moz-box-shadow: 20px 0px 0px 0px $red, -20px 0px 0px 0px $red
   box-shadow: 20px 0px 0px 0px $red, -20px 0px 0px 0px $red
 
 a
@@ -52,17 +52,26 @@ a
   font-size: 5em
   font-weight: 800
   background-color: $white
-  display: inline-block
-  padding: 10px 15px
+  display: inline
+  padding: 0
   margin: 1.5em 0 0 0
+  -webkit-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
+  -moz-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
+  box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
 
+.title-spacing
+  margin-top: 16px
 
 .hero-subtitle
   font-size: 3.25em
+  line-height: 1.1em
   color: $white
   background-color: $black
-  display: inline-block
-  padding: 10px 15px
+  display: inline
+  padding: 5px 0
+  -webkit-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
+  -moz-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
+  box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
 
 .apply-cta a
   background-color: $red
@@ -123,3 +132,13 @@ a
 
 .apply-cta-footer a:hover
   background-color: $dark-grey
+
+@media (max-width: 450px)
+  .hero-title
+    font-size: 4em
+
+  .title-spacing
+    margin-top: 14px
+
+  .hero-subtitle
+    font-size: 3em

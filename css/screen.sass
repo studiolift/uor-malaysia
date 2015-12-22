@@ -5,6 +5,7 @@ $white: #FFFFFF
 $black: #272C2D
 $dark-grey: #50535A
 $light-grey: #E9EAE8
+$dark-red: #bc042d
 
 @mixin social-media
   width: 30px
@@ -13,6 +14,12 @@ $light-grey: #E9EAE8
   cursor: pointer
   transition: all 0.3s ease 0s
 
+@mixin clearfix
+  content: ""
+  display: table
+  clear: both
+
 @import "partials/grid"
 @import "partials/type"
+@import "partials/nav"
 @import "partials/styles"
