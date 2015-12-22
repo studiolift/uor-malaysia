@@ -4,6 +4,11 @@ body
   background-repeat: repeat
   background-attachment: fixed
 
+
+::selection
+  background-color: $red
+  color: $white
+
 .wrapper
   background-color: $light-grey
   margin: 0 auto
@@ -12,17 +17,45 @@ body
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25)
 
+
+// HERO
+
 .hero
   background-color: $dark-grey
   background-image: url(../img/hero-img.jpg)
   background-size: cover
   background-position: center
-  padding: 0 0 250px
+  padding: 0 0 150px
   margin: 0 0 200px 0
+  transition: all 0.3s ease 0s
+
+.hero-title
+  font-size: 5em
+  font-weight: 800
+  background-color: $white
+  display: inline
+  padding: 0
+  margin: 1.5em 0 0 0
+  -webkit-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
+  -moz-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
+  box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white
+
+.title-spacing
+  margin-top: 16px
+
+.hero-subtitle
+  font-size: 3.25em
+  line-height: 1.1em
+  color: $white
+  background-color: $black
+  display: inline
+  padding: 5px 0
+  -webkit-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
+  -moz-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
+  box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black
 
 .top-bar
   background-color: $red
-  //padding: 15px
   margin: 25px 0 0 0
   transition: all 0.3s ease 0s
 
@@ -48,11 +81,21 @@ body
 
 @media (max-width: 450px)
   .hero
-    min-height: 100vh
+    padding: 0 0 50px
+    //min-height: 100vh
 
   .hero-text
     margin: 2.5em 0 1em 0
     padding: 15px
+
+  .hero-title
+    font-size: 4em
+
+  .title-spacing
+    margin-top: 14px
+
+  .hero-subtitle
+    font-size: 3em
 
 
 // PANEL 1
@@ -63,6 +106,17 @@ body
   max-width: 1024px
   margin: 0 auto 100px auto
   padding: 100px 0 0 0
+
+.panel-title
+  background-color: $red
+  display: inline
+  color: $white
+  -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red
+  -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red
+  box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red
+
+.margin-fix
+  margin-bottom: 1.5em
 
 .icon-fixed
   position: absolute
@@ -80,16 +134,16 @@ body
   .icon-fixed
     display: none
 
-// COURSE SECTION
+
+// COURSE SELECTION SECTION
 
 .courses
   margin-bottom: 100px
-  //background-color: pink
 
 .course-info
   background-color: $white
   margin: 0 0 1.875rem 0
-  padding: 20px 20px 35px 20px
+  padding: 1.25em 1.25em 0.25em 1.25em
 
 .course-img-1
   background-image: url(../img/course-thumb-1.jpg)
@@ -115,6 +169,7 @@ body
   .courses
     margin-bottom: 50px
 
+
 // PANEL 2
 
 .panel-2
@@ -133,6 +188,14 @@ body
 .language-support
   background-color: $red
   padding: 30px 20px 5px 20px
+  h2
+    background-color: $black
+    -webkit-box-shadow: 10px 0px 0px 0px $black, -20px 0px 0px 0px $black
+    -moz-box-shadow: 10px 0px 0px 0px $black, -20px 0px 0px 0px $black
+    box-shadow: 10px 0px 0px 0px $black, -20px 0px 0px 0px $black
+  p
+    color: $white
+    font-weight: 400
 
 
 // FINAL CTA
@@ -140,6 +203,9 @@ body
 .end-cta
   background-color: $red
   padding: 60px 0
+
+.sign-off
+  color: $white
 
 
 // FOOTER
@@ -171,39 +237,33 @@ footer a
 .facebook
   background-image: url(../img/social-media.svg)
   background-position: 0px 0px
+  margin-left: 0px
   @include social-media
 
 .twitter
   background-image: url(../img/social-media.svg)
   background-position: 150px 0px
   @include social-media
-  margin-left: 10px
-
 
 .linkedin
   background-image: url(../img/social-media.svg)
   background-position: 120px 0px
   @include social-media
-  margin-left: 10px
-
 
 .googleplus
   background-image: url(../img/social-media.svg)
   background-position: 90px 0px
   @include social-media
-  margin-left: 10px
 
 .youtube
   background-image: url(../img/social-media.svg)
   background-position: 60px 0px
   @include social-media
-  margin-left: 10px
 
 .instagram
   background-image: url(../img/social-media.svg)
   background-position: 30px 0px
   @include social-media
-  margin-left: 10px
 
 .instagram:hover, .youtube:hover, .googleplus:hover, .linkedin:hover, .twitter:hover, .facebook:hover
   opacity: 0.5
@@ -212,3 +272,84 @@ footer a
   .social-media
     float: none
     margin: 20px 0 0 0
+
+
+// COURSE PAGE STYLES
+
+.hero-text-course
+  margin: 2em 0 2em 0
+  padding: 0 15px
+
+.business-hero
+  background-image: url(../img/course-hero-1.jpg)
+  padding: 0 0 0em 0
+  margin: 0 0 6em 0
+
+.course-intro-container
+  padding: 1.25em 1.25em 0.25em 1.25em
+  margin: 0px 0 1em 0
+  background-color: $black
+  max-width: 580px
+  p
+    color: $white
+    font-weight: 400
+    font-size: 1.25em
+    line-height: 1.3em
+    margin: 0 0 0.75em 0
+
+.course-container
+  margin: 0px 0 4em 0
+
+.course-heading
+  text-transform: none
+  color: $black
+  em
+    font-style: normal
+    color: $red
+
+.fact-file
+  background-color: $white
+  padding: 1.25em 1.25em 1.25em 5em
+  position: relative
+
+.fact-file ul
+  margin: 0 0 0.75em 0
+  padding: 0
+  list-style: none
+  li
+    font-size: 1.125em
+    margin: 0 0 0.25em 0
+    strong
+      color: $dark-grey
+      font-weight: 500
+
+.fact-file-icon
+  position: absolute
+  top: 0
+  left: 0
+  background-color: $red
+  width: 60px
+
+.other-courses
+  background-color: $white
+  padding: 1.25em
+  margin-bottom: 4em
+
+.other-courses ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+.other-courses ul li
+  display: inline-block
+  margin: 0 1.25em 0 0
+  padding: 0
+  text-transform: uppercase
+  a
+    font-weight: 500
+  strong
+    color: $dark-grey
+
+@media (max-width: 785px)
+  .other-courses ul li
+    display: list-item

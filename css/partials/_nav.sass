@@ -23,6 +23,9 @@ nav ul li
 nav ul li:hover
   background-color: $dark-red
 
+.active
+  background-color: $dark-red
+
 .menu
   display: none
 
@@ -62,10 +65,10 @@ nav ul li:hover
 
   .menu:hover
     opacity: 1
+    background-color: $dark-red
 
   .show-nav
     height: 100%
-
 
 
 // SUB NAV
@@ -75,9 +78,9 @@ nav ul li:hover
 
 .sub-nav
   background-color: $black
-  padding: 20px 20px 10px 10px
   position: relative
-  display: none
+  max-height: 0
+  overflow: hidden
 
 .sub-nav:after
   @include clearfix
@@ -86,26 +89,27 @@ nav ul li:hover
   margin: 0
   list-style: none
   float: right
-  transition: all 0.3s ease 0s
+  padding: 20px 20px 10px 10px
 
 .sub-nav ul li
   box-sizing: border-box
   font-size: 1.15em
   font-weight: 500
-  color: $white
   text-align: right
   a
     color: $white
+  a:hover
+    color: $dark-grey
 
-.sub-nav ul li:hover
-  color: $dark-grey
+.active-sub
+  color: $dark-red
 
 .arrow
   width: 0
   height: 0
   border-left: 10px solid transparent
   border-right: 10px solid transparent
-  border-top: 10px solid $red
+  border-top: 10px solid $dark-red
   font-size: 0
   line-height: 0
   position: absolute
@@ -113,7 +117,7 @@ nav ul li:hover
   top: 0
 
 .show-sub-nav
-  display: block
+  max-height: 100%
 
 @media (max-width: 450px)
   .arrow

@@ -5,7 +5,9 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
-<rect x="10.1" y="22.9" class="st0" width="29.8" height="4.2"/>
-<rect x="10.1" y="10.1" class="st0" width="29.8" height="4.2"/>
-<rect x="10.1" y="35.7" class="st0" width="29.8" height="4.2"/>
+<g>
+	<path class="st0" d="M14,7.5v4.2H8v16.2h6v14.6h26v-35H14z M14,25.9h-4V13.8h4V25.9z M38,40.5H16v-31h22V40.5z"/>
+	<rect x="19.7" y="14.8" class="st0" width="14.5" height="2.9"/>
+	<rect x="19.7" y="20.7" class="st0" width="14.5" height="2.9"/>
+</g>
 </svg>

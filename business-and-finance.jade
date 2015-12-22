@@ -1,0 +1,186 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title University of Reading Malaysia
+    link(href='css/screen.css', rel='stylesheet', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    
+  body
+    .wrapper
+      header.hero.business-hero
+        .row
+          .top-bar
+            .logo
+              img(src='img/device.svg')
+            nav    
+              ul
+                a(href='/index.html')
+                  li Home
+                li.course-btn courses
+          
+          
+          .sub-nav
+            .arrow
+            ul
+              li.active-sub Business and Finance
+              li 
+                a(href='/index.html') Property and Construction
+              li 
+                a(href='/index.html') Sciences
+              li 
+                a(href='/index.html') Foundation Courses
+
+          .menu
+            img(src='img/menu.svg')
+    
+        .row
+          .hero-text-course
+            div
+              h1.hero-title Business 
+                br 
+                |  and Finance
+          .course-intro-container
+            p Choose from two courses delivered by the triple-accredited Henley Business School. Both offer excellent career prospects and world-class teaching, but offer different options  suitable for different roles in business. 
+            p Get the best of both worlds – choose from a finance-focused BSc that will prepare you for accountancy and finance roles, or a management-focused BA that provides a great basis for entrepreneurial and managerial roles. You can also choose to study for 1 or 2 years in the UK.
+          
+          a.btn.red(href='#') How to apply
+      
+      section.course-container
+        article.row
+          .large-6.medium-6.columns
+            h2.course-heading 
+              em BSc 
+              | Finance and Business Management
+            p Explore finance specialisms and core areas of business management, such as strategy, marketing and international business in this 3 year course. The strong emphasis on international will prepare you to face the challenges of global business. This course offers an excellent grounding for a career in accountancy and finance, but the broader business management knowledge you'll develop will also prepare you for a range of other roles in business and other sectors. Over 90% of our graduates are in employment or further study within 6 months of graduating.
+            a.btn.red(href='#') How to apply
+            a.btn.grey(href='#') Find out more
+          .large-6.medium-6.columns
+            aside.fact-file
+              img.fact-file-icon(src='img/fact-file.svg')
+              h4 Fact file
+              h5 Entry requirements
+              ul
+                li 
+                  strong A level: 
+                  | AAB+ &ndash; BBB
+                li 
+                  strong STPM: 
+                  | AAB+ &ndash; BBB
+                li 
+                  strong UEC: 
+                  | 5As+ excluding Bahasa Melaya and Chinese language
+                li 
+                  strong International Baccalaureate: 
+                  | 35+ &ndash; 32 points overall or an equivalent international qualification
+                li Grade B A or higher in Maths at IGCSE; SPM Mathematics Grade B A or higher
+                li Grade B or higher in English at IGCSE; SPM English 1119 Grade B or higher
+              h5 English language requirements
+              ul
+                li IELTS 6.5
+              h5 Fees
+              ul
+                li 
+                  strong Home: 
+                  | RM 35,875 pa
+                li 
+                  strong International: 
+                  |  RM 41,255
+              h5 Scholarships
+              p Find out more 
+                a(href='http://www.reading.edu.my/scholarships ') here    
+      
+      section.course-container
+        article.row
+          .large-6.medium-6.columns
+            h2.course-heading 
+              em BA 
+              | Management and Business
+            p Get a broad understanding of business including areas such as markets, law, finance, entrepreneurship and marketing. This wide-ranging course allows you to specialise in your area of interest in your final year. 
+            p This course is a great basis for running your own business, or for management roles across a range of sectors. Other career options include banking and finance, consultancy, management, accountancy, sales and marketing and the public sector.
+            a.btn.red(href='#') How to apply
+            a.btn.grey(href='#') Find out more
+          .large-6.medium-6.columns
+            aside.fact-file
+              img.fact-file-icon(src='img/fact-file.svg')
+              h4 Fact file
+              h5 Entry requirements
+              ul
+                li 
+                  strong A level: 
+                  | AAB+ &ndash; BBB
+                li 
+                  strong STPM: 
+                  | AAB+ &ndash; BBB
+                li 
+                  strong UEC: 
+                  | 5As+ excluding Bahasa Melaya and Chinese language
+                li 
+                  strong International Baccalaureate: 
+                  | 35+ &ndash; 32 points overall or an equivalent international qualification
+              h5 English language requirements
+              ul
+                li IELTS 6.5
+              h5 Fees
+              ul
+                li 
+                  strong Home: 
+                  | RM 35,875 pa
+                li 
+                  strong International: 
+                  |  RM 41,255
+              h5 Scholarships
+              p Find out more 
+                a(href='http://www.reading.edu.my/scholarships ') here  
+                
+      section
+        .row
+          .large-12.columns
+            aside.other-courses
+              ul
+                li
+                  strong Other courses 
+                li
+                  a(href='#') Property and Construction 
+                li
+                  a(href='#') Sciences
+                li
+                  a(href='#') Foundations courses 
+              
+
+      footer
+        .row
+          .medium-6.columns
+            p &copy; 2015 University of Reading
+            p Visit the main site 
+              a(href='http://www.reading.edu.my') reading.edu.my
+          .medium-6.columns
+            ul.social-media
+              a(href='https://www.facebook.com/universityofreadingmalaysia?ref=ts&fref=ts')
+                li.facebook
+              a(href='https://twitter.com/UoRMalaysia')
+                li.twitter
+              a(href='https://www.linkedin.com/edu/school?id=171025&trk=edu-cp-title') 
+                li.linkedin
+              a(href='https://plus.google.com/105915338740456278219/posts')
+                li.googleplus
+              a(href='https://www.youtube.com/channel/UCFOV46h5JqwaBD2gSzL8TJg')
+                li.youtube
+              a(href='https://www.instagram.com/uniofreadingmalaysia/')
+                li.instagram
+
+    script.
+      $('.course-btn').on('click', function(){
+      $('.sub-nav').toggleClass('show-sub-nav');
+      });  
+
+    script.
+      $('.menu').on('click', function(){
+      $('nav').toggleClass('show-nav');
+      });
+
+    script.
+      $('.course-btn').on('click', function(){
+      $(this).toggleClass('active');
+      });  
