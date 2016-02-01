@@ -20,12 +20,16 @@ $light-grey: #E9EAE8;
 }
 
 @mixin clearfix {
+  &:after {
   content: "";
   display: table;
   clear: both;
+  }
 }
 
 @import "partials/grid";
 @import "partials/type";
 @import "partials/nav";
+@import "partials/hero";
+@import "partials/footer";
 @import "partials/styles";

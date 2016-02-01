@@ -29,7 +29,7 @@
 }
 
 .active {
-  background-color: $dark-red !important; 
+  background-color: $dark-red !important;
 }
 
 .menu {
@@ -90,9 +90,6 @@
   position: relative;
   max-height: 0;
   overflow: hidden;
-}
-
-.sub-nav:after {
   @include clearfix;
 }
 
@@ -140,5 +137,39 @@
 @media (max-width: 450px) {
   .arrow {
     border-top: 10px solid $dark-red;
+  }
+}
+
+
+// Other courses nav
+
+.other-courses {
+  background-color: $white;
+  padding: 1.25em;
+  margin-bottom: 4em;
+}
+
+.other-courses ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.other-courses ul li {
+  display: inline-block;
+  margin: 0 1.25em 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  a {
+    font-weight: 500;
+  }
+  strong {
+    color: $dark-grey;
+  }
+}
+
+@media (max-width: 785px) {
+  .other-courses ul li {
+    display: list-item;
   }
 }

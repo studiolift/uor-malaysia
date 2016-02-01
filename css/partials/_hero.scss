@@ -1,0 +1,157 @@
+// HERO
+
+.top-bar {
+  background-color: $red;
+  margin: 1.5em 0 0 0;
+  transition: all 0.3s ease 0s;
+  @include clearfix;
+}
+
+.logo {
+  margin: 15px;
+  width: 114px;
+  float: left;
+  padding: 0;
+  height: 51px;
+}
+
+.hero {
+  background-color: $dark-grey;
+  background-image: url(../img/hero-img.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 0 0 4em 0;
+  margin: 0 0 14em 0;
+  transition: all 0.3s ease 0s;
+  -webkit-box-shadow: inset 0px -111px 101px -72px rgba(0,0,0,0.5);
+  -moz-box-shadow: inset 0px -111px 101px -72px rgba(0,0,0,0.5);
+  box-shadow: inset 0px -111px 101px -72px rgba(0,0,0,0.5);
+}
+
+.hero--foundation,
+.hero--sciences,
+.hero--property,
+.hero--business {
+  margin: 0 0 6em 0;
+  background-position: center;
+}
+
+.hero--foundation {
+  background-image: url(../img/course-hero-3.jpg);
+  background-position: center;
+}
+
+.hero--sciences {
+  background-image: url(../img/course-hero-4.jpg);
+  background-position: right;
+}
+
+.hero--property {
+  background-image: url(../img/course-hero-2.jpg);
+  background-position: right;
+}
+
+.hero--business {
+  background-image: url(../img/course-hero-1.jpg);
+}
+
+.hero__text {
+  margin: 4em 0 0em 0;
+  padding: 15px;
+  max-width: 1024px;
+  position: relative;
+}
+
+.hero__title {
+  margin: 0 0 1em 0;
+}
+
+.hero__sub-title {
+  margin-bottom: 2em;
+}
+
+.hero__title h1 {
+  font-size: 5em;
+  font-weight: 800;
+  background-color: $white;
+  display: inline;
+  padding: 0;
+  margin: 0 0 1em 0;
+  -webkit-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
+  -moz-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
+  box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
+}
+
+.hero__sub-title h1 {
+  font-size: 3.25em;
+  line-height: 1.1em;
+  color: $white;
+  background-color: $black;
+  display: inline;
+  padding: 5px 0;
+  -webkit-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
+  -moz-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
+  box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
+}
+
+.hero__course-intro {
+  padding: 1.25em 1.25em 0.25em 1.25em;
+  margin: 0 0 1.5em 0;
+  background-color: $black;
+  max-width: 580px;
+}
+
+.hero__course-intro  p {
+  color: $white;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  margin: 0 0 0.75em 0;
+}
+
+.hero__cta {
+  margin-left: -15px;
+}
+
+@media (max-width: 1000px) {
+  .top-bar {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    margin: 0 0 0 0;
+  }
+
+  .hero--foundation,
+  .hero--sciences,
+  .hero--property,
+  .hero--business {
+    margin: 0 0 3em 0;
+    background-position: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    padding: 0 0 0 0;
+  }
+
+  .hero__text {
+    margin: 1.5em 0 1em 0;
+    padding: 15px;
+  }
+
+  .hero__title {
+    margin: 0 0 0.5em 0;
+  }
+
+  .hero__title h1 {
+    font-size: 2.5em;
+  }
+
+  .hero__sub-title h1 {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,76 @@
+// FOOTER
+
+.footer {
+  background-color: $dark-grey;
+  padding: 40px;
+}
+
+.footer p {
+  color: $white;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0em;
+}
+
+.footer a {
+  color: $light-grey;
+  font-weight: 500;
+  margin: 0em;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    color: $white;
+  }
+}
+
+.social-media {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+}
+
+.facebook {
+  background-position: 0px 0px;
+  margin-left: 0px;
+  @include social-media;
+}
+
+.twitter {
+  background-position: 150px 0px;
+  @include social-media;
+}
+
+.linkedin {
+  background-position: 120px 0px;
+  @include social-media;
+}
+
+.googleplus {
+  background-position: 90px 0px;
+  @include social-media;
+}
+
+.youtube {
+  background-position: 60px 0px;
+  @include social-media;
+}
+
+.instagram {
+  background-position: 30px 0px;
+  @include social-media;
+}
+
+.instagram:hover, .youtube:hover, .googleplus:hover, .linkedin:hover, .twitter:hover, .facebook:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 750px) {
+  .social-media {
+    float: none;
+    margin: 20px 0 0 0;
+  }
+}

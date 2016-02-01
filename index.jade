@@ -22,104 +22,114 @@ html.no-js(lang='en')
                 a(href='index.html')
                   li Home
                 li.course-btn courses
-          
-          
           .sub-nav
             .arrow
             ul
+              li 
+                a(href='foundation-courses.html') Foundation Courses            
               li
                 a(href='business-and-finance.html') Business and Finance
               li 
-                a(href='index.html') Property and Construction
+                a(href='property-and-construction.html') Property and Construction
               li 
-                a(href='index.html') Sciences
-              li 
-                a(href='index.html') Foundation Courses
-    
+                a(href='sciences.html') Sciences
+
           .menu
             img(src='img/menu.svg')
     
         .row
-          .hero-text
-            div
-              h1.hero-title Are you Ready
-            .title-spacing
-              h1.hero-subtitle to join the top 1%
-          
-          a.btn.red(href='#') How to apply
+          .hero__text
+            .hero__title
+              h1 Are you Ready
+            .hero__sub-title  
+              h1 to join the top 1%
+            .hero__cta
+              a.btn.red(href='#') Register for open day
       
-      section.panel-1
+      aside.video__embed
+        .video__container
+          .video
+            iframe(width='380', height='213', src='https://www.youtube.com/embed/jEaXor4D0sY', frameborder='0', allowfullscreen='')
+      
+      section.usp__section.usp__section--icon-fixed
         .row
-          .large-4.columns
-            img.icon-fixed(src='img/world-icon.png')
-            div.margin-fix  
-              h2.panel-title Best of both worlds
+          .large-4.columns.usp__content
+            img.usp__icon.usp__icon--fixed(src='img/world-icon.png')
+            .usp__title
+              h2 Best of both worlds
             p Study the same excellent course content offered in the UK at a fraction of the cost. You’ll even have the option to study in the UK for up to 2 years as part of your degree.
-          .large-4.columns
-            img.icon-fixed(src='img/scholarship-icon.png')
-            div.margin-fix              
-              h2.panel-title 100% Scholarships
+          .large-4.columns.usp__content
+            img.usp__icon.usp__icon--fixed(src='img/scholarship-icon.png')
+            .usp__title             
+              h2 100% Scholarships
             p We offer up to 100% scholarships for the highest achieving students. A range of other scholarships giving substantial discounts of up to 30% on standard course fees are also available.
-          .large-4.columns
-            img.icon-fixed(src='img/campus-icon.png')
-            div.margin-fix                  
-              h2.panel-title Outstanding campus
-            p Our brand new campus in EduCity@Iskandar offers a fantastic environment for life, study and networking providing all you need, including accommodation and healthcare.
+          .large-4.columns.usp__content
+            img.usp__icon.usp__icon--fixed(src='img/campus-icon.png')
+            .usp__title                 
+              h2 Visit an Open Day
+            p Discover what it would be like to study at our brand new campus, at our Open Day on 
+              strong Friday 4 
+              | or 
+              strong Saturday 5 March
+              | .
 
-      section.courses
+      section.courses__section
         .row
           .medium-6.columns
-            .course-img-1
-            .course-info
-              div.margin-fix   
-                h3 Business and finance
-              p Choose from two courses delivered by the triple-accredited Henley Business School. Both offer excellent career prospects and world-class teaching, but focus on different aspects of business.
-              //.find-out-more
-              a.btn.grey(href='business-and-finance.html') Find out more
+            article.course
+              .course__img-4
+              .course__content 
+                .course__header
+                  h3  Foundation courses
+                p Develop your academic skills and get access to our degree courses – even if you don’t have A levels or equivalent qualifications – by studying for a foundation course in your chosen subject area.
+                //.find-out-more
+                a.btn.grey(href='#') Find out more
           .medium-6.columns
-            .course-img-2
-            .course-info
-              div.margin-fix   
-                h3 Property and construction
-              p Get set for a career in a sector with amazing opportunities. Our degrees in Real Estate and Quantity Surveying are accredited by globally recognised bodies giving you a head start in this fast-growing industry.
-              //.find-out-more
-              a.btn.grey(href='#') Find out more
+            article.course
+              .course__img-1
+              .course__content
+                .course__header
+                  h3 Business and finance
+                p Choose from two courses delivered by the triple-accredited Henley Business School. Both offer excellent career prospects and world-class teaching, but focus on different aspects of business.
+                a.btn.grey(href='business-and-finance.html') Find out more
           .medium-6.columns
-            .course-img-3
-            .course-info
-              div.margin-fix
-                h3 Sciences
-              p Kick-start your career with research experience and the opportunity to apply your skills on projects and work placements. Both our Psychology and Pharmacy degrees are recognised by professional bodies.
-              //.find-out-more
-              a.btn.grey(href='#') Find out more
+            article.course
+              .course__img-2
+              .course__content
+                .course__header
+                  h3 Property and construction
+                p Get set for a career in a sector with amazing opportunities. Our degrees in Real Estate and Quantity Surveying are accredited by globally recognised bodies giving you a head start in this fast-growing industry.
+                //.find-out-more
+                a.btn.grey(href='#') Find out more
           .medium-6.columns
-            .course-img-4
-            .course-info
-              div.margin-fix   
-                h3 Foundation courses
-              p Develop your academic skills and get access to our degree courses – even if you don’t have A levels or equivalent qualifications – by studying for a foundation course in your chosen subject area.
-              //.find-out-more
-              a.btn.grey(href='#') Find out more
+            article.course
+              .course__img-3
+              .course__content
+                .course__header
+                  h3 Sciences
+                p Kick-start your career with research experience and the opportunity to apply your skills on projects and work placements. Both our Psychology and Pharmacy degrees are recognised by professional bodies.
+                //.find-out-more
+                a.btn.grey(href='#') Find out more
 
-      section.panel-2
+      section.usp__section
         .row
-          .large-6.medium-12.columns
+          .large-8.medium-12.columns
             .row
-              .medium-6.columns
-                img.icon(src='img/employment-icon.png')
-                div.margin-fix     
-                  h3.panel-title Excellent job prospects
+              .medium-6.columns.usp__content
+                img.usp__icon(src='img/world-icon.png')
+                .usp__title
+                  h2 Excellent job prospects
                 p Our graduates have above average employability rates and higher earnings than many of our competitors. 
-              .medium-6.columns
-                img.icon(src='img/1percent-icon.png')
-                div.margin-fix   
-                  h3.panel-title Be part of the top 1%  
+              .medium-6.columns.usp__content
+                img.usp__icon(src='img/world-icon.png')
+                .usp__title
+                  h2 Be part of the top 1%  
                 p The University of Reading is one of the best universities in the world, ranking in the top 1%.
-          .large-6.medium-12.columns
-            aside.language-support
-              div.margin-fix   
-                h2.panel-title English Language support
-              p We have over 30 years' experience of teaching academic English, so we can help you develop this key skill that will benefit you throughout your career. If you need to improve your English before studying for a degree with us, we offer a range of English language courses that will help you reach the level you need.
+          .large-4.medium-12.columns
+            .language-support
+              .language-support__heading 
+                h2 English Language support
+              p.language-support__content We have over 30 years' experience of teaching academic English, so we can help you develop this key skill that will benefit you throughout your career. If you need to improve your English before studying for a degree with us, we offer a range of English language courses that will help you reach the level you need.
 
       section.end-cta
         .row
@@ -127,7 +137,7 @@ html.no-js(lang='en')
             h2.sign-off Are you ready?&nbsp;&nbsp;&nbsp;
             a.btn.white(href='#') How to apply
       
-      footer
+      footer.footer
         .row
           .medium-6.columns
             p &copy; 2015 University of Reading
@@ -161,9 +171,4 @@ html.no-js(lang='en')
     script.
       $('.course-btn').on('click', function(){
       $(this).toggleClass('active');
-      });  
-
-    script
-      $(function(){  // $(document).ready shorthand
-      $('.hero').fadeIn('slow');
       });
