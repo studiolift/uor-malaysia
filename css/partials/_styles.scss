@@ -31,7 +31,7 @@ body {
 .video__container {
   position: absolute;
   width: 380px;
-  top: -335px;
+  top: -280px;
   right: -15px;
   z-index: 4;
   box-sizing: content-box;
@@ -77,8 +77,8 @@ body {
   position: relative;
   background-color: $white;
   max-width: 1024px;
-  margin: 0 auto 6.25em auto;
-  padding: 25px 0;
+  margin: 0 auto 3.25em auto;
+  padding: 25px 0 0 0;
 }
 
 .usp__section--icon-fixed {
@@ -86,10 +86,14 @@ body {
 }
 
 .usp__title {
-  margin-bottom: 1.5em;
+  margin: 0 20px 1.5em 78px;
 }
 
-.usp__title h2 {
+.usp__title--fw { // full width
+  margin: 0 0 1.5em 10px;
+}
+
+.usp__title h3 {
   background-color: $red;
   display: inline;
   color: $white;
@@ -99,7 +103,7 @@ body {
 }
 
 .usp__icon {
-  width: 100px;
+  width: 68px;
   padding: 10px;
   background-color: $black;
   margin-bottom: 1.5em;
@@ -107,13 +111,13 @@ body {
 
 .usp__icon--fixed {
   position: absolute;
-  top: -50px;
+  top: 19px;
 }
 
 .language-support {
   background-color: $red;
   padding: 25px 25px 10px 25px;
-  margin: -25px;
+  margin: 0 0 25px 0;
   box-sizing: border-box;
 }
 
@@ -163,7 +167,7 @@ body {
 // COURSE SELECTION SECTION
 
 .courses__section {
-  margin-bottom: 6.25em;
+  margin-bottom: 1.25em;
 }
 
 .course__img-1, .course__img-2, .course__img-3, .course__img-4 {
@@ -209,6 +213,8 @@ body {
 .end-cta {
   background-color: $red;
   padding: 60px 0;
+  background-image: url(../img/bg-pattern-red.png);
+  background-repeat: repeat;
 }
 
 .sign-off {
