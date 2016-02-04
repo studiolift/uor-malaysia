@@ -1,0 +1,167 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title University of Reading Malaysia
+    link(href='css/screen.css', rel='stylesheet', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://use.typekit.net/evf3zix.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+    
+  body
+    .wrapper
+      header.hero.hero--foundation
+        .row
+          .top-bar
+            .logo
+              img(src='img/device.svg')
+            nav.nav    
+              ul
+                a(href='index.html')
+                  li Home
+                li.course-btn courses
+          
+          
+          .sub-nav
+            .arrow
+            ul
+              li.active-sub Foundation Courses
+              li
+                a(href='business-and-finance.html') Business and Finance
+              li 
+                a(href='property-and-construction.html') Property and Construction
+              li 
+                a(href='sciences.html') Sciences
+
+
+          .menu
+            img(src='img/menu.svg')
+    
+        .row
+          .hero__text
+            .hero__title
+              h1 Foundation  
+                br 
+                |  courses
+          .hero__course-intro
+            p If you don't have A-levels or equivalent qualifications, you can still access our world-class degrees by taking one of our foundation courses. These 1 year access courses will teach you the basics of the subject and develop your academic skills. 
+            p If you successfully complete the foundation course, you'll be guaranteed progression to a degree course in the same subject area either in Malaysia or the UK, without needing to reapply.
+          
+          a.btn.red(href='http://www.reading.edu.my/apply') How to apply
+      
+      section.course__container
+        article.row
+          .large-6.medium-6.columns
+            h2.course__heading Foundation in Business
+            p Get prepared for BA Management and Business, BSc Finance and Business Management, BSc Real Estate, BSc Quantity Surveying or BSc Psychology at the University of Reading Malaysia with this 1 year access course. 
+            p Develop the academic skills that you'll need to succeed on a degree-level course and get an introduction into business and management that will prepare you for studying a range of courses in Malaysia or the UK. An English language module is available for students with an IELTS score below 6.5, or you could improve your English skills with one of our 
+              a(href='http://www.reading.edu.my/learn/foundation-and-language-plus-programme') English language courses 
+              | before you start.
+            a.btn.red(href='http://www.reading.edu.my/apply') How to apply
+            a.btn.grey(href='http://www.reading.edu.my/learn/foundation-in-business') Find out more
+          
+          .large-6.medium-6.columns
+            aside.fact-file
+              img.fact-file__icon(src='img/fact-file.svg')
+              h4 Fact file
+              h5 Entry requirements
+              ul
+                li 
+                  strong SPM: 
+                  | Minimum of 5 at Grade C or above, excluding English for Science and Technology, Islamic Studies and Moral Studies
+                li 
+                  strong IGCSE: 
+                  | 5 passes at Grade A – C in relevant subjects or an equivalent international qualification
+                li 
+                  strong SPM 1119: 
+                  | Grade C
+                li 
+                  strong IELTS: 
+                  | 5.5 (no element below 5.0).  Students entering in March or pursuing a law degree in the UK require IELTS 6.0 (no element below 5.0) 
+      
+      section.course__container
+        article.row
+          .large-6.medium-6.columns
+            h2.course__heading Foundation in Science
+            p Get prepared for BSc Psychology or Pharmacy at the University of Reading Malaysia with this 1 year access course.
+            p Develop the academic skills that you'll need to succeed on a degree-level course and get an introduction into science and mathematics at a higher level that will prepare you for studying a range of courses in Malaysia or the UK. An English language module is available for students with an IELTS score below 6.5, or you could improve your English skills with one of our 
+              a(href='http://www.reading.edu.my/learn/foundation-and-language-plus-programme') English language courses
+              |  before you start.
+            a.btn.red(href='http://www.reading.edu.my/apply') How to apply
+            a.btn.grey(href='http://www.reading.edu.my/learn/foundation-in-science') Find out more
+          .large-6.medium-6.columns
+            aside.fact-file
+              img.fact-file__icon(src='img/fact-file.svg')
+              h4 Fact file
+              h5 Entry requirements
+              strong For entry to M/BPharm degrees:
+              ul
+                li 
+                  strong SPM: 
+                  | Minimum of 5 Grade Bs in Mathematics or Additional Mathematics, Biology, Chemistry, Physics and one other subject.
+              strong For entry to all other Science degrees:   
+              ul  
+                li 
+                  strong SPM: 
+                  | Minimum of 5 at Grade C or above, excluding English for Science and Technology, Islamic Studies and Moral Studies
+                li 
+                  strong IGCSE: 
+                  | 5 passes at Grade A – C in relevant subjects or an equivalent international qualification
+                li 
+                  strong SPM 1119: 
+                  | Grade C
+                li 
+                  strong IELTS: 
+                  | 5.0 (no element below 4.5)
+              
+      section
+        .row
+          .large-12.columns
+            aside.other-courses
+              ul
+                li
+                  strong Other courses 
+                li
+                  a(href='business-and-finance.html') Business and Finance 
+                li
+                  a(href='property-and-construction.html') Property and Construction 
+                li
+                  a(href='sciences.html') Sciences
+
+      footer.footer
+        .row
+          .medium-6.columns
+            p &copy; 2015 University of Reading
+            p Visit the main site 
+              a(href='http://www.reading.edu.my') reading.edu.my
+          .medium-6.columns
+            ul.social-media
+              a(href='https://www.facebook.com/universityofreadingmalaysia?ref=ts&fref=ts')
+                li.facebook
+              a(href='https://twitter.com/UoRMalaysia')
+                li.twitter
+              a(href='https://www.linkedin.com/edu/school?id=171025&trk=edu-cp-title') 
+                li.linkedin
+              a(href='https://plus.google.com/105915338740456278219/posts')
+                li.googleplus
+              a(href='https://www.youtube.com/channel/UCFOV46h5JqwaBD2gSzL8TJg')
+                li.youtube
+              a(href='https://www.instagram.com/uniofreadingmalaysia/')
+                li.instagram
+
+    script.
+      $('.course-btn').on('click', function(){
+      $('.sub-nav').toggleClass('show-sub-nav');
+      });  
+
+    script.
+      $('.menu').on('click', function(){
+      $('nav').toggleClass('show-nav');
+      });
+
+    script.
+      $('.course-btn').on('click', function(){
+      $(this).toggleClass('active');
+      });  
