@@ -1,6 +1,6 @@
 body {
   background-color: #d8d8d8;
-  background-image: url(../img/bg-pattern.png);
+  //background-image: url(../img/bg-pattern.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -11,6 +11,8 @@ body {
 }
 
 .wrapper {
+  background-image: url(../img/bg-pattern.png);
+  background-repeat: repeat;
   background-color: $light-grey;
   margin: 0 auto;
   max-width: 1440px;
@@ -31,11 +33,11 @@ body {
 .video__container {
   position: absolute;
   width: 380px;
-  top: -280px;
-  right: -15px;
+  top: -160px;
+  right: 0px;
   z-index: 4;
   box-sizing: content-box;
-  border: 15px solid $light-grey;
+  //border: 15px solid $light-grey;
 }
 
 .video {
@@ -97,9 +99,22 @@ body {
   background-color: $red;
   display: inline;
   color: $white;
+  box-decoration-break: clone;
   -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
   -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
   box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $red;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 .usp__icon {
@@ -111,7 +126,7 @@ body {
 
 .usp__icon--fixed {
   position: absolute;
-  top: 19px;
+  top: 20px;
 }
 
 .language-support {
@@ -122,21 +137,34 @@ body {
 }
 
 .language-support__heading {
-    margin: 0.25em 0 1em 0.5em;
+  margin: 0.25em 0 1em 0.5em;
 }
 
 .language-support__heading h2 {
-    background-color: $black;
-    color: $white;
-    -webkit-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
-    -moz-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
-    box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
-    display: inline;
+  background-color: $black;
+  color: $white;
+  box-decoration-break: clone;
+  -webkit-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  -moz-box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  box-shadow: 10px 0px 0px 0px $black, -10px 0px 0px 0px $black;
+  display: inline;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $black;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 .language-support__content {
-    color: $white;
-    font-weight: 400;
+  color: $white;
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
