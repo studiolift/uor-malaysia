@@ -4,7 +4,14 @@ html.no-js(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title University of Reading Malaysia
+    link(rel="shortcut icon", href="img/favicon/favicon.ico")
+    link(rel="apple-touch-icon", sizes="76x76", href="img/favicon/76.png")
+    link(rel="apple-touch-icon", sizes="120x120", href="img/favicon/120.png")
+    link(rel="apple-touch-icon", sizes="152x152", href="img/favicon/152.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="img/favicon/180.png")
     link(href='css/screen.css', rel='stylesheet', type='text/css')
+    //if IE 
+      link(rel='stylesheet', type='text/css', href='css/ie-screen.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='https://use.typekit.net/evf3zix.js')
     script.
@@ -51,22 +58,22 @@ html.no-js(lang='en')
           .video
             iframe(width='380', height='213', src='https://www.youtube.com/embed/jEaXor4D0sY', frameborder='0', allowfullscreen='')
       
-      section.usp__section.usp__section--icon-fixed
+      section.usp__section
         .row
           .large-4.columns.usp__content
             img.usp__icon.usp__icon--fixed(src='img/world-icon.png')
             .usp__title
-              h2 Best of both worlds
+              h3 Best of both worlds
             p Study the same excellent course content offered in the UK at a fraction of the cost. You’ll even have the option to study in the UK for up to 2 years as part of your degree.
           .large-4.columns.usp__content
             img.usp__icon.usp__icon--fixed(src='img/scholarship-icon.png')
             .usp__title             
-              h2 100% Scholarships
+              h3 100% Scholarships
             p We offer up to 100% scholarships for the highest achieving students. A range of other scholarships giving substantial discounts of up to 30% on standard course fees are also available.
           .large-4.columns.usp__content
             img.usp__icon.usp__icon--fixed(src='img/campus-icon.png')
             .usp__title                 
-              h2 Visit an Open Day
+              h3 Visit an Open Day
             p Discover what it would be like to study at our brand new campus, at our Open Day on 
               strong Friday 4 
               | or 
@@ -113,19 +120,19 @@ html.no-js(lang='en')
 
       section.usp__section
         .row
-          .large-8.medium-12.columns
+          .large-6.medium-12.columns
             .row
               .medium-6.columns.usp__content
-                img.usp__icon(src='img/world-icon.png')
-                .usp__title
-                  h2 Excellent job prospects
+                img.usp__icon(src='img/employment-icon.png')
+                .usp__title.usp__title--fw
+                  h3 Excellent job prospects
                 p Our graduates have above average employability rates and higher earnings than many of our competitors. 
               .medium-6.columns.usp__content
-                img.usp__icon(src='img/world-icon.png')
-                .usp__title
-                  h2 Be part of the top 1%  
+                img.usp__icon(src='img/1percent-icon.png')
+                .usp__title.usp__title--fw
+                  h3 Be part of the top 1%  
                 p The University of Reading is one of the best universities in the world, ranking in the top 1%.
-          .large-4.medium-12.columns
+          .large-6.medium-12.columns
             .language-support
               .language-support__heading 
                 h2 English Language support
@@ -135,7 +142,7 @@ html.no-js(lang='en')
         .row
           .large-12.columns
             h2.sign-off Are you ready?&nbsp;&nbsp;&nbsp;
-            a.btn.white(href='http://www.reading.edu.my/apply') How to apply
+            a.btn.white(href='#') Register for open day
       
       footer.footer
         .row
