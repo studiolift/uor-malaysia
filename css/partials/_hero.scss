@@ -21,7 +21,7 @@
   background-size: cover;
   background-position: left;
   padding: 0 0 4em 0;
-  margin: 0 0 10em 0;
+  margin: 0 0 3em 0;
   transition: all 0.3s ease 0s;
   -webkit-box-shadow: inset 0px -111px 101px -72px rgba(0,0,0,0.5);
   -moz-box-shadow: inset 0px -111px 101px -72px rgba(0,0,0,0.5);
@@ -77,9 +77,22 @@
   display: inline;
   padding: 0;
   margin: 0 0 1em 0;
+  box-decoration-break: clone;
   -webkit-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
   -moz-box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
   box-shadow: 15px 0px 0px 0px $white, -15px 0px 0px 0px $white;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $white;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 .hero__sub-title h1 {
@@ -89,9 +102,22 @@
   background-color: $black;
   display: inline;
   padding: 5px 0;
+  box-decoration-break: clone;
   -webkit-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
   -moz-box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
   box-shadow: 15px 0px 0px 0px $black, -15px 0px 0px 0px $black;
+  position: relative;
+  &:after{
+    position:absolute;
+    content: " ";
+    width:1px;
+    left:-1px;
+    top:0;
+    height:100%;
+    background: $black;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 .hero__course-intro {
