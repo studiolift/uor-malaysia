@@ -1,6 +1,5 @@
 body {
   background-color: #d8d8d8;
-  //background-image: url(../img/bg-pattern.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -75,6 +74,18 @@ body {
 
 // USP Panel
 
+.usp_header {
+  margin: 0 0 3em 0;
+}
+
+.usp_header h1 {
+  background-color: $red;
+  display: inline;
+  padding: 10px 20px;
+  color: $white;
+  font-size: 3em;
+}
+
 .usp__section {
   position: relative;
   background-color: $white;
@@ -91,8 +102,8 @@ body {
   margin: 0 20px 1.5em 78px;
 }
 
-.usp__title--fw { // full width
-  margin: 0 0 1.5em 10px;
+.usp__title--fw {
+  margin: 0 0 1.5em 78px;
 }
 
 .usp__title h3 {
@@ -126,7 +137,7 @@ body {
 
 .usp__icon--fixed {
   position: absolute;
-  top: 20px;
+  top: 19px;
 }
 
 .language-support {
