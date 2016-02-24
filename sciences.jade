@@ -4,7 +4,14 @@ html.no-js(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title University of Reading Malaysia
+    link(rel="shortcut icon", href="img/favicon/favicon.ico")
+    link(rel="apple-touch-icon", sizes="76x76", href="img/favicon/76.png")
+    link(rel="apple-touch-icon", sizes="120x120", href="img/favicon/120.png")
+    link(rel="apple-touch-icon", sizes="152x152", href="img/favicon/152.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="img/favicon/180.png")
     link(href='css/screen.css', rel='stylesheet', type='text/css')
+    //if IE 
+      link(rel='stylesheet', type='text/css', href='css/ie-screen.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='https://use.typekit.net/evf3zix.js')
     script.
@@ -28,7 +35,7 @@ html.no-js(lang='en')
             .arrow
             ul
               li 
-                a(href='foundation-courses.html') Foundation Courses
+                a(href='foundation-courses.html') Foundation Programmes
               li
                 a(href='business-and-finance.html') Business and Finance
               li
@@ -155,7 +162,7 @@ html.no-js(lang='en')
                 li
                   strong Other courses 
                 li
-                  a(href='foundation-courses.html') Foundation courses 
+                  a(href='foundation-courses.html') Foundation Programmes 
                 li
                   a(href='business-and-finance.html') Business and Finance 
                 li
