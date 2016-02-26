@@ -167,7 +167,7 @@
 
   .hero__title h1 {
     font-size: 3.5em;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   .hero__sub-title h1 {
@@ -191,10 +191,21 @@
 
   .hero__title h1 {
     font-size: 2.5em;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   .hero__sub-title h1 {
     font-size: 1.75em;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero__title h1 {
+    font-size: 2em;
+    word-break: break-word;
+  }
+
+  .hero__sub-title h1 {
+    font-size: 1.5em;
   }
 }
