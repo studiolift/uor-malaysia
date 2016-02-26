@@ -18,6 +18,17 @@ html.no-js(lang='en')
       try{Typekit.load({ async: true });}catch(e){}
     
   body
+    // Google Tag Manager
+    noscript
+      iframe(src='//www.googletagmanager.com/ns.html?id=GTM-MWKR9H', height='0', width='0', style='display:none;visibility:hidden')
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MWKR9H');
+    // End Google Tag Manager
+  
     .wrapper
       header.hero
         .row
@@ -51,16 +62,16 @@ html.no-js(lang='en')
             .hero__sub-title  
               h1 to join the top 1%
             .hero__cta
-              a.btn.red(href='#') Register for open day
+              a.btn.red(href='#courses') Find out more
       
       aside.video__embed
         .video__container
           .video
-            iframe(width='380', height='213', src='https://www.youtube.com/embed/jEaXor4D0sY', frameborder='0', allowfullscreen='')
+            iframe(width='380', height='213', src='https://www.youtube.com/embed/GGFua346LgY', frameborder='0', allowfullscreen='')
       
       div.row
         .large-12.columns
-          .usp_header
+          .usp__header
             h1 Get Ready
       
       section.usp__section
@@ -76,15 +87,12 @@ html.no-js(lang='en')
               h3 100% Scholarships
             p We offer up to 100% scholarships for the highest achieving students. A range of other scholarships giving substantial discounts of up to 30% on standard course fees are also available.
           .large-4.columns.usp__content
-            img.usp__icon.usp__icon--fixed(src='img/campus-icon.png')
+            img.usp__icon.usp__icon--fixed(src='img/1percent-icon.png')
             .usp__title                 
-              h3 Visit an Open Day
-            p Discover what it would be like to study at our brand new campus, at our Open Day on 
-              strong Friday 4 
-              | or 
-              strong Saturday 5 March
-              | .
-
+              h3 Be part of the top 1%  
+            p The University of Reading is one of the best universities in the world, ranked at 156 by QS and in the top 1%.
+      
+      a(name='courses')
       section.courses__section
         .row
           .medium-6.columns
@@ -93,7 +101,7 @@ html.no-js(lang='en')
               .course__content 
                 .course__header
                   h3  Foundation Programmes
-                p Develop your academic skills and get access to our degree courses – even if you don’t have A levels or equivalent qualifications – by studying for a foundation programme in your chosen subject area.
+                p Develop your academic skills and get access to our degree courses – even if you don’t have A levels or equivalent qualifications – by studying for a foundation programme in Business or Science.
                 a.btn.grey(href='foundation-courses.html') Find out more
           .medium-6.columns
             article.course
@@ -130,10 +138,10 @@ html.no-js(lang='en')
                   h3 Honours Degrees
                 p No matter what subject you choose, all undergraduate degrees from the University of Reading in the UK and in Malaysia are Honours Degrees.
               .medium-6.columns.usp__content
-                img.usp__icon.usp__icon--fixed(src='img/1percent-icon.png')
+                img.usp__icon.usp__icon--fixed(src='img/campus-icon.png')
                 .usp__title.usp__title--fw
-                  h3 Be part of the top 1%  
-                p The University of Reading is one of the best universities in the world, ranked at 156 by QS and in the top 1%.
+                  h3 Visit an Open Day
+                p Discover what it would be like to study at our brand new campus, at one of our regular Open Days.
           .large-6.medium-12.columns
             .language-support
               .language-support__heading 
@@ -144,7 +152,7 @@ html.no-js(lang='en')
         .row
           .large-12.columns
             h2.sign-off Are you ready?&nbsp;&nbsp;&nbsp;
-            a.btn.white(href='#') Register for open day
+            a.btn.white(href='#courses') Find out more
       
       footer.footer
         .row
