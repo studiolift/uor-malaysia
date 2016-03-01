@@ -74,16 +74,18 @@ body {
 
 // USP Panel
 
-.usp_header {
-  margin: 0 0 3em 0;
+.usp__header {
+  margin: 0 0 3em 10px;
 }
 
-.usp_header h1 {
+.usp__header h1 {
   background-color: $red;
   display: inline;
-  padding: 10px 20px;
   color: $white;
   font-size: 3em;
+  -webkit-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  -moz-box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
+  box-shadow: 10px 0px 0px 0px $red, -10px 0px 0px 0px $red;
 }
 
 .usp__section {
